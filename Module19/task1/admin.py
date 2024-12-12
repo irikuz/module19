@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Buyer, Game
+from .models import Buyer, Game, News
 
 
 # Register your models here.
@@ -24,5 +24,5 @@ class Admin_Game(admin.ModelAdmin):
             'fields': ('description', ('size', 'age_limited'),)
         }),
     )
-
+admin.site.register(News)
 
