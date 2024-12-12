@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from task1.views import sign_up_by_html, sign_up_by_django, main1, menu, bascet
+from task1.views import sign_up_by_html, sign_up_by_django, main1, menu, bascet, news
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +25,5 @@ urlpatterns = [
     path('cart/', bascet.as_view()),
     path('html_sign_up/', sign_up_by_html),
     path('django_sign_up/', sign_up_by_django),
+    path('news/', news),
 ]
